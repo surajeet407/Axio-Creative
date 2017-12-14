@@ -1,0 +1,32 @@
+{
+  "name": "foundation-ssg",
+  "version": "1.0.0",
+  "authors": [
+    "ZURB <foundation@zurb.com>"
+  ],
+  "description": "Static site generator for Foundation for Sites.",
+  "main": "gulpfile.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "~6.2.3",
+    "motion-ui": "~1.2.2",
+    "font-awesome": "fontawesome#^4.6.3",
+    "isotope": "^3.0.1",
+    "masonry": "^4.1.1",
+    "imagesloaded": "^4.1.1",
+    "lightbox2": "^2.8.2",
+    "animate.css": "^3.5.2",
+    "angular": "angular2#^1.5.8"
+  },
+  "private": true,
+  "devDependencies": {
+    "font-awesome": "^4.6.3"
+  }
+}

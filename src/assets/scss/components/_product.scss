@@ -1,0 +1,416 @@
+//single product page css----------------------------
+
+
+.sk-single-product{
+  .mask{
+        @include masking;
+    }
+     h4{
+        text-align: center;
+        margin-bottom: 22px;
+        text-transform: uppercase;
+        color: #fff;
+        opacity: 0.9;
+        font-size: 70px;
+        font-family: $base_font;
+      }  
+        i{
+          color: #fff;
+          -webkit-transition: .5s ease-in-out;
+          -moz-transition: .5s ease-in-out;
+          -o-transition: .5s ease-in-out;
+          font-size: 40px;
+          opacity: 0.9;
+          cursor: pointer;
+          margin-top: 60px;
+            &:hover{
+              -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            color: $first_color;
+            }
+        }
+      a.button {
+        @extend .a-product;
+        opacity: 0.8;
+        margin-top: 20px;  
+    }
+    p {
+        font-size: 35px;
+        text-transform: uppercase;
+        color: #cacaca;
+        opacity: 0.9;
+        font-style: italic;
+        font-family: $third_font;
+        font-weight: 600;
+    }
+    img {
+      opacity: 0.8;
+      width: 200px;
+      height: 230px;
+      margin-top: 30px;
+  }
+}
+
+.product-detail{
+  h1{
+    @extend .after-before;
+  }
+  h3{
+    color: #666;
+    font-family: $base_font;
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  p{
+    font-size: 18px;
+    font-family: $third_font;
+    padding: 75px;
+    text-align: justify;
+    color: darken(#ccc, 80%);
+    a{
+      color: $first_color;
+      border-bottom: 1px solid #666;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+  }
+}
+
+.orbit-image{
+  @extend .grey-image;
+}
+.product-feature{
+  padding: 0px 62px;
+    h2{
+    text-transform: uppercase;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 38px;
+    font-family: $base_font;
+  }
+  ul{
+    margin-top: 6px;
+    margin-bottom: 23px;
+    li{
+      text-transform: capitalize;
+      color: #fff;
+      font-size: 17px;
+      font-family: $third_font;
+    }
+  }
+  a{
+      @extend .a-product;
+  }
+}
+
+.orbit{
+  ul{
+    li{
+      img{
+        height: 100%;
+      }
+    }
+  }
+}
+.product-feature-detail{
+  .product-image{
+    border-radius: 50%;
+    width: 180px;
+    z-index: 1;
+    margin-bottom: 25px;
+    border: 6px solid #ccc;
+    -webkit-transition: all .15s ease-out 0s;
+    -moz-transition: all .15s ease-out 0s;
+    -o-transition: all .15s ease-out 0s;
+    transition: all .15s ease-out 0s;
+    -webkit-box-shadow: 0 4px 9px 0 rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 4px 9px 0 rgba(0,0,0,0.4);
+    box-shadow: 0 4px 9px 0 rgba(0,0,0,0.4)
+  }
+   .product-image:hover{
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2);
+      -webkit-transition: all .15s ease-out 0s;
+      -moz-transition: all .15s ease-out 0s;
+      -o-transition: all .15s ease-out 0s;
+      transition: all .15s ease-out 0s;
+    }
+  h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 12px 0 13px 0;
+    text-transform: uppercase;
+    font-family: $base_font;
+  }
+  p{
+    margin: 0 0 10px;
+    font-family: $third_font;
+    font-size: 18px;
+
+  }
+}
+
+.product-buy{
+  h2{
+    margin-top: 15px;
+    color: #fff;
+    font-weight: 500;
+    font-family: $base_font;
+    text-transform: capitalize;
+      a{
+        margin-top: 10px;
+        margin-left: 40px;
+        font-size: 22px;
+        @extend .a-product;
+      }
+  }
+}
+
+.product-comment{
+  .masking{
+    @include masking;
+  }
+  img{
+    @extend .m-tb-50;
+  }
+  h2{
+    color: #fff;
+    margin-top: 20px;
+    font-family: $base_font;
+    text-transform: capitalize; 
+    i{
+      margin-left: 10px;
+    }
+  }
+  p{
+    color: #fff;
+    font-family: $third_font;
+    font-size: 22px;
+  }
+  h3{
+    border-right: 2px solid #fff;
+    font-family: $second_font;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 0px 12px;
+  }
+}
+.sk-product-form{
+  h1{
+    font-family: $base_font;
+    text-transform: uppercase;
+    margin-bottom: 20px; 
+  }
+  h3{
+    font-family: $third_font;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+    font-weight: bold;
+    color: #666;
+  }
+}
+.product-modal{
+  h2{
+    margin-bottom: 35px;
+    margin-top: 35px;
+    color: #fff;
+    font-family: $base_font;
+    text-transform: capitalize;
+    
+  }
+   a.small{
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.68);
+        width: 100%;
+        font-weight: 600;
+        border-radius: 4px;
+        font-size: 18px;
+        box-shadow: 0 4px 0 #ccc;
+        &:hover{
+          background-color: #3c3939;    
+          box-shadow: none;
+          color: $first_color;
+          top: 4px;
+      }
+   }
+   a.cancel-btn{
+    text-align: center;
+    text-transform: capitalize;
+    color: #000;
+    &:hover{
+      color: $first_color;
+    }
+   }
+  button.close-button {
+    color: #fff;
+    &:hover{
+      color: $first_color;
+    }
+  }   
+}
+
+.product-modal1{
+  h2{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #fff;
+    font-family: $base_font;
+    text-transform: uppercase;
+    
+  }
+  h3{
+    font-family: $third_font;
+    color: #fff;
+    text-transform: capitalize;
+    
+  }
+  p{
+    font-family: $base_font;
+    color: #fff;
+  }
+  ul{
+    li{
+        font-family: $third_font;
+        color: #fff;
+    }
+  }
+  button.close-button {
+    color: #fff;
+    &:hover{
+      color: $first_color;
+    }
+  }
+}
+
+
+//form validation css start-----------------------
+
+@mixin transition($dur, $prop: all, $style: ease) {
+  transition: $prop $dur $style;
+}
+
+.contactForm {
+
+
+  .formBody {
+    background: #fff;
+    height: 371px;
+    padding: 20px 12px;
+    overflow: hidden;
+    @include transition(0.2s);
+  }
+
+  .inputContainer {
+    position: relative;
+    margin-bottom: 5px;
+
+    .message {
+      color: #FF5C5C;
+      background: #FF5C5C * 2;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 0;
+      margin: 0;
+      line-height: 2.5em;
+      text-align: center;
+      overflow: hidden;
+      @include transition(0.1s);
+    }
+
+    
+    input,
+    textarea {
+      box-sizing: border-box;
+      padding: 10px;
+      font-size: 14px;
+      line-height: 1em;
+      border: 2ps solid #ccc;
+      font: inherit;
+    }
+    input{
+      height: 60px;
+    }
+
+    textarea,
+    input {
+      width: 100%;
+    }
+
+    textarea {
+      margin-bottom: -5px;
+    }
+
+  }
+
+  .submitBtn {
+    background: #666;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 70px;
+    margin-top: 30px;
+    @include transition(0.5s, background);
+
+    &:hover {
+      background: #8a8a8a;
+    }
+  }
+
+  &.success {
+    overflow: hidden;
+
+      form {
+        @include transition(0.5s, opacity);
+        opacity: 0;
+      }
+  }
+
+  .inputContainer.success {
+    border-color: #82E682 / 1.1;
+
+    &:after {
+      font: 1.25em/2em FontAwesome;
+      color: #82E682;
+      position: absolute;
+      top: 0;
+      right: 10px;
+      content: "\f00c";
+    }
+
+    input,
+    textarea {
+      color: #0A8754;
+    }
+  }
+
+  .inputContainer.error {
+    border-color: #FF5C5C / 1.1;
+
+    .message {
+      width: 100%;
+    }
+
+    &:after {
+      font: 1.25em/2em FontAwesome;
+      color: #FF5C5C;
+      position: absolute;
+      top: 0;
+      right: 10px;
+      content: "\f00d";
+    }
+    label {
+      background: #FF5C5C;
+      border-color: #FF5C5C / 1.1;
+    }
+
+    input,
+    textarea {
+      color: #FF5C5C;
+    }
+  }
+}

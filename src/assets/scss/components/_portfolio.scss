@@ -1,0 +1,75 @@
+
+//portfolio-single page css-----------------------
+
+
+.sk-blog-detail{
+	.side-portfolio-menu{
+		ul{
+			margin-top: 18px;
+			li{
+				list-style: none;
+				margin-bottom: 40px;
+				h3{
+					font-size: 30px;
+					font-weight: bold;
+					text-transform: uppercase;
+					font-family: $base_font;
+					letter-spacing: 2px;
+				}
+				p{
+					font-family: $third_font;
+					font-size: 30px;
+					color: #666;
+					text-transform: capitalize;
+				}
+        a{
+          font-size: 30px;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-family: $base_font;
+          letter-spacing: 2px;
+          color: #000;
+        }
+			}
+		}
+	}
+}	
+
+.icon-repeat {
+  -webkit-animation: Rotate 500ms infinite linear;
+  -moz-animation: Rotate 500ms infinite linear;
+  -ms-animation: Rotate 500ms infinite linear;
+  -o-animation: Rotate 500ms infinite linear;
+  animation: Rotate 500ms infinite linear;
+}
+@-o-keyframes Rotate {
+  from {-o-transform:rotate(0deg);}
+  to {-o-transform:rotate(360deg);}
+}
+@-moz-keyframes Rotate {
+ from {-moz-transform:rotate(0deg);}
+ to {-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes Rotate {
+  from {-ms-transform:rotate(0deg);}
+  to {-ms-transform:rotate(360deg);}
+}
+@-webkit-keyframes Rotate {
+  from {-webkit-transform:rotate(0deg);}
+  to {-webkit-transform:rotate(360deg);}
+}
+@keyframes Rotate {
+  from { transform:rotate(0deg);}
+  to { transform:rotate(360deg);}
+}
+
+#iconRepeatMain{
+  display: inline-block;    
+  position: absolute;
+  z-index:10007;
+  margin-top: 5px;
+  margin-left: 10px;
+	  &:hover{
+	  	color: $first_color;
+	  }
+}

@@ -1,0 +1,53 @@
+/**
+*
+* Fonts will be listed here
+*
+**/
+
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(https://fonts.googleapis.com/css?family=Abel);
+
+
+/**
+*
+* Custom Variables will go here
+*
+**/
+$brand-color: #000;
+$first_color: #CF693C;
+$second_color: #FAFAFA;
+$third_color: #333333;
+$fourth_color: #222222;
+
+
+$base_font: "Yanone Kaffeesatz";
+$second_font: "Permanent Marker";
+$third_font: "Abel";
+
+
+$bar-width: 100px;
+$bar-height: 10px;
+$bar-spacing: 25px;
+
+/**
+*
+* Load all sass files here
+*
+**/
+
+@import "base-styling";
+@import "element-styling";
+@import "margins";
+@import "padding";
+@import "borders";
+@import "typo";
+@import "homepage";
+@import "loader";
+@import "about";
+@import "portfolio";
+@import "service";
+@import "contact";
+@import "blog";
+@import "product";
+@import "animate";

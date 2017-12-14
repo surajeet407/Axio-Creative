@@ -1,0 +1,55 @@
+.sk-contact-head{
+	h1{
+		font-size: 90px;
+		text-transform: uppercase;
+		font-family: $base_font;
+		font-weight: bold;
+	}
+	p{
+		font-size: 20px;
+		font-family: $third_font;
+	}
+	form{
+		@extend .myform;
+	}
+	.contact-detail{
+		margin-top: 80px;
+		ul{
+			margin: 0;
+			padding: 0;
+			li{
+				list-style: none;
+				width: 25%;
+				float: left;
+				text-align: center;
+				
+				h3{
+					font-size: 22px;
+					font-family: $base_font;
+					text-transform: uppercase;
+					font-weight: bold;
+					word-spacing: 2px;
+					i{
+						font-size: 16px;
+						margin-right: 5px;
+					}
+				}
+				p{
+					font-size: 15px;
+					color: #666;
+				}
+			}
+		}
+	}
+}
+
+#map {
+    border: 2px solid #ccc;
+    border-bottom: none;
+    width: 100%;
+   	height: 400px;
+   	background-color: grey;
+}
+
+
+

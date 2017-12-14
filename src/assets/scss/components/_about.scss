@@ -1,0 +1,156 @@
+
+
+.top-bar, .top-bar ul{
+  background-color: #3e3c3c
+}
+.title-bar {
+    background: rgb(63, 79, 82);
+}    
+
+.title-bar .menu-icon {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    float: right;
+}
+
+  
+
+.menu-text a {
+  text-transform: uppercase;
+  font-family: $second_font;
+  font-size: 50px;
+  color: #fff;
+  &:hover{
+    color: $first_color;
+  }
+
+}
+.medium-horizontal{
+  li{
+    a{
+      margin-top: 25px;
+      color: #fff;
+      text-transform: uppercase;
+        font-size: 28px;
+        font-family: $base_font;
+      &:hover{
+        color: $first_color;
+      }
+    } 
+  }
+  .has-submenu{
+    a{
+      margin-top: 25px;
+      color: #fff;
+      text-transform: uppercase;
+        font-size: 28px;
+        font-family: $base_font;
+      &:hover{
+        color: $first_color;
+      }
+      &:after{
+        border-color: #fff transparent transparent;
+      }
+    }
+    .submenu{
+          margin-right: -25px;
+          background-color: rgba(255, 255, 255, 0);
+          border: none;
+      li{
+            margin-left: 20px;
+            text-align: center;
+            box-shadow: inset 0 0 0 0 #31302B;
+            -webkit-transition: all ease 0.8s;
+            -moz-transition: all ease 0.8s;
+            transition: all ease 0.8s;
+        a{
+          &:hover{
+            color: #ccc;
+          }
+        }
+        &:hover{
+          box-shadow: inset 300px 0 0 0 #2f2d2d;
+          color: #FFF;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+.skills {
+    float: left;
+    clear: right;
+    margin: 133px 22px 182px 132px;
+}
+.skill-class{
+  h3{
+    color: #fff;
+    position: absolute;
+    margin-left: 130px;
+    margin-top: -28px;
+    font-size: 20px;
+  }
+}
+
+.skillsTop {
+    float: left;
+    clear: right;
+    width: 100%;
+    margin: 5px;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-weight: 200;
+    color: #fff;
+  span{
+    position: absolute;
+    margin-left: 195px;
+    color: #fff;
+  }
+
+}
+
+.skillsBottom {
+    float: left;
+    clear: right;
+    width: 200%;
+    margin: 2px 0px 0px 0px;
+}
+
+.progress {
+    background:#ccc; 
+    height:6px;
+}
+
+.progress-bar {
+  background-image: -webkit-linear-gradient(left, #000 0%,
+    #FE7D7D 100%);
+  background-image: -moz-linear-gradient(left, #000 0%,
+    #FE7D7D 100%);
+  background-image: -o-linear-gradient(left, #000 0%,
+    #FE7D7D 100%);
+  background-image: linear-gradient(to right, #000 0%,
+    #FE7D7D 100%);
+    height:100%;
+    width:0%;
+}
+
+
+.design-1, .developement, .brand, .javascript{
+    -webkit-transition: width 20.50s ease !important;
+    -moz-transition: width 20.50s ease !important;
+    -o-transition: width 20.50s ease !important;
+    transition: width 20.50s ease !important;
+ }
+
+
+
+

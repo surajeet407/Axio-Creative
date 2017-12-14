@@ -1,0 +1,103 @@
+/**
+*
+* Element styling
+*
+**/
+
+.after-before{
+		display: inline-block;
+	    position: relative;
+	    text-transform: uppercase;
+	    font-family: $base_font;
+	    font-weight: 400;
+	    letter-spacing: 3px;
+	    
+	&:before{
+		content: '';
+	    width: 50%;
+	    position: absolute;
+	    background: #333333;
+	    height: 1px;
+	    left: 0;
+	    top: 0;
+	}
+	&:after{
+		content: '';
+	    width: 50%;
+	    position: absolute;
+	    background: #333333;
+	    height: 1px;
+	    right: 0;
+	    bottom: 0;
+	}
+}
+
+.a-class{
+	text-transform: uppercase;
+	color: #000;
+    font-weight: bold;
+	&:hover{
+		color: $first_color;
+	}
+}
+.a-product{
+	 text-transform: uppercase;
+      padding: 12px 25px;
+      font-size: 15px;
+      font-weight: bold;
+      background-color: #fff;
+      color: #000;
+      letter-spacing: 3px;
+      box-shadow: 0 4px 0 #ccc;
+      &:hover{
+        background-color: #666;
+        box-shadow: none;
+        top: 4px;
+    }
+}
+
+.grey-image{
+	-webkit-filter: grayscale(100%);
+	-webkit-transition: .5s ease-in-out;
+	-moz-filter: grayscale(100%); 
+	-moz-transition: .5s ease-in-out;
+	-o-filter: grayscale(100%); 
+	-o-transition: .5s ease-in-out;
+	 &:hover {
+		-webkit-filter: grayscale(0%);
+		-webkit-transition: .5s ease-in-out;
+		-moz-filter: grayscale(0%);
+		-moz-transition: .5s ease-in-out;
+		-o-filter: grayscale(0%);
+	} 
+}
+
+
+
+.myform{
+		input{
+		    background: none;
+		    border: 1px solid rgba(51, 51, 51, 0.44);
+		    outline: none;
+		    padding: 8px 15px;
+		    height: 60px;
+		    text-transform: uppercase;
+		}
+		textarea{
+			background: none;
+		    border: 1px solid rgba(51, 51, 51, 0.44);
+		    outline: none;
+		}
+		a{
+			@extend .a-class;
+		}
+	}
+
+@mixin masking() {
+	top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(51, 51, 51, 0.7);
+      position: absolute;
+}
